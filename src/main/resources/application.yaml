@@ -1,0 +1,17 @@
+spring:
+  datasource:
+    url: jdbc:mysql://${MYSQL_HOST:localhost}:3306/cad_schedule_db
+    username: root
+    password: root
+  jpa:
+    show-sql: true
+  jackson:
+    default-property-inclusion: non_null
+  hibernate:
+    dll-auto: validate
+    dialect: MySQL8Dialect
+app:
+  auth:
+    admin:
+      password: root
+      email: root
